@@ -10,7 +10,7 @@ const moment = require('moment')
 const delay = require('delay')
 const si = require('systeminformation');
 
-let master_ = "master.api.canavar.licentia.xyz"
+let master_ = "master.api.canavar.licentia.xyz:7444"
 let master = null
 var masterReachable = new EventEmitter()
 var settingIntegrity = new EventEmitter()
