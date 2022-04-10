@@ -757,7 +757,7 @@ app.get('/mgmt/systemInfo', async (req, res) => {
 
 app.post('/mgmt/update', (req, res) => {
     res.send(200)
-    exec("cd /C.A.N.A.V.A.R/ ; git stash; git stash drop; git pull; cd master ; npm install; pm2 restart all", (err, stdout, stderr) => {
+    exec("cd /C.A.N.A.V.A.R-legacy/ ; git stash; git stash drop; git pull; cd master ; npm install; pm2 restart all", (err, stdout, stderr) => {
         if (err) {
             console.error(err)
             res.send(500, { std_err: err })
@@ -780,7 +780,7 @@ app.post('/mgmt/restart', (req, res) => {
 })
 let githubratelimitcooldown = 0
 app.post('/mgmt/vcontrol', (req, res) => {
-    exec("cd /C.A.N.A.V.A.R/ ; git show -1 --stat  ", (err, stdout, stderr) => {
+    exec("cd /C.A.N.A.V.A.R-legacy/ ; git show -1 --stat  ", (err, stdout, stderr) => {
         if (err) {
             console.error(err)
             res.send(200, { std_err: err })
@@ -790,7 +790,7 @@ app.post('/mgmt/vcontrol', (req, res) => {
                 if (stdout.length > 10) {
                     var options = {
                         method: 'GET',
-                        url: 'https://api.github.com/repos/mehmetefeerkan/C.A.N.A.V.A.R/commits',
+                        url: 'https://api.github.com/repos/mehmetefeerkan/C.A.N.A.V.A.R-legacy/commits',
                         headers: { Accept: 'application/vnd.github.v3+json' }
                     };
                     axios.request(options).then(function (response) {

@@ -1,5 +1,5 @@
 {
-  "name": "c.a.n.a.v.a.r",
+  "name": "C.A.N.A.V.A.R-legacy",
   "version": "0.0.2",
   "description": "Good-faith botnet, WIP",
   "main": "index.js",
@@ -34,12 +34,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mehmetefeerkan/C.A.N.A.V.A.R.git"
+    "url": "git+https://github.com/mehmetefeerkan/C.A.N.A.V.A.R-legacy.git"
   },
   "author": "mehmet efe erkan | ephesus",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mehmetefeerkan/C.A.N.A.V.A.R/issues"
+    "url": "https://github.com/mehmetefeerkan/C.A.N.A.V.A.R-legacy/issues"
   },
-  "homepage": "https://github.com/mehmetefeerkan/C.A.N.A.V.A.R#readme"
+  "homepage": "https://github.com/mehmetefeerkan/C.A.N.A.V.A.R-legacy#readme"
 }
